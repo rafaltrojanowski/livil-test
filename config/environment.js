@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'livil-test',
+    podModulePrefix: 'livil-test/pods',
     environment,
     rootURL: '/',
     locationType: 'auto',

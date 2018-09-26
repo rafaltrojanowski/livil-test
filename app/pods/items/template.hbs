@@ -1,0 +1,13 @@
+<h1>List of items ({{itemsCount}})</h1>
+
+<!-- {{#each model.posts as |item|}}-->
+<!-- <li><strong>{{item.title}}:</strong> {{item.body}}</li>-->
+<!-- {{/each}}-->
+
+<!-- {{#each model.users as |item|}}-->
+<!-- <li><strong>{{item.name}}:</strong> {{item.username}}</li>-->
+<!-- {{/each}}-->
+
+{{#each items as |item|}}
+  {{item-details item=item}}
+{{/each}}
