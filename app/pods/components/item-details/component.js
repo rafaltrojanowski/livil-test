@@ -3,10 +3,12 @@ import Ember from 'ember';
 
 export default Component.extend({
 
-  details: Ember.computed('item', function() {
-    if(this.item.type === "users") {
+  itemText: Ember.computed('item', function() {
+    let type = this.item._internalModel.modelName
+
+    if(type === "user") {
       return `User ${this.item.name} has username ${this.item.username}.`;
-    } else {
+    } else if (type === "post") {
       return `Post title: "${this.item.title}" has body: ${this.item.body}.`;
     }
   })

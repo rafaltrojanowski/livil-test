@@ -8,6 +8,12 @@
 <!-- <li><strong>{{item.name}}:</strong> {{item.username}}</li>-->
 <!-- {{/each}}-->
 
-{{#each items as |item|}}
-  {{item-details item=item}}
+<!-- {{#each items as |item|}}-->
+  <!-- {{item-details item=item}}-->
+<!-- {{/each}}-->
+
+<!-- {{ stream }}-->
+
+{{#each stream as |record|}}
+  {{item-details item=record}}
 {{/each}}
