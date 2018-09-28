@@ -9,8 +9,4 @@ export default DS.RESTSerializer.extend({
     return this._super(store, primaryModalClass, payload, id, requestType);
   },
 
-  normalize(type, hash, property) {
-    hash.type = property
-    return this._super(type, hash, property)
-  }
 });
